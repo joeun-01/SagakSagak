@@ -1,5 +1,6 @@
 package com.songilcraft.sagak_sagak.recycler.viewholder
 
+import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -37,7 +38,13 @@ class TicketViewHolder(private val binding : ViewTicketBinding) : RecyclerView.V
     }
 
 
-    fun bind(ticket : Ticket) {
-        binding.ticket = ticket
+    fun bind(ticket : ArrayList<Ticket>) {
+        binding.ticket = ticket[0]
+        if (ticket.size > 1){
+            binding.tvCount.visibility = View.VISIBLE
+            binding.tvCount.text = ticket.size.toString()
+        } else {
+            binding.tvCount.visibility = View.GONE
+        }
     }
 }

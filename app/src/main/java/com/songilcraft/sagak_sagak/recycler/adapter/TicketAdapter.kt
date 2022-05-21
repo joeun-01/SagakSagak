@@ -9,7 +9,7 @@ import com.songilcraft.sagak_sagak.recycler.viewholder.TicketViewHolder
 
 class TicketAdapter : RecyclerView.Adapter<TicketViewHolder>(){
 
-    private val ticketList = arrayListOf<Ticket>()
+    private val ticketList = arrayListOf<ArrayList<Ticket>>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TicketViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -23,7 +23,7 @@ class TicketAdapter : RecyclerView.Adapter<TicketViewHolder>(){
 
     override fun getItemCount(): Int = ticketList.size
 
-    fun applyData(newTicketList : ArrayList<Ticket>){
+    fun applyData(newTicketList : ArrayList<ArrayList<Ticket>>){
         ticketList.clear()
         ticketList.addAll(newTicketList)
         notifyItemRangeInserted(0, newTicketList.size)
