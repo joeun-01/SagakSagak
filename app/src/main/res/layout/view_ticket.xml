@@ -88,7 +88,7 @@
             android:layout_height="36dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/shape_circle_gray"
+            android:background="@drawable/shape_circle_gray_d9"
             android:elevation="4dp"
             android:layout_margin="4dp"
             android:gravity="center"
