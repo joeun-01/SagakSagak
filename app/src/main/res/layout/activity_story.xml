@@ -111,6 +111,21 @@
                     app:layout_constraintTop_toTopOf="parent"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="1:5"
+                    android:background="@drawable/shape_chip_black_trans_50"
+                    app:layout_constraintBottom_toBottomOf="@id/vp2_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_date_and_place"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

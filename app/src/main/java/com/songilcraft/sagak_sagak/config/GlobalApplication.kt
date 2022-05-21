@@ -10,8 +10,9 @@ import java.util.concurrent.TimeUnit
 
 class GlobalApplication : Application() {
     companion object {
-        const val API_URL = "도메인주소!!"
+        const val API_URL = "https://www.sgsg.shop/"
         const val X_ACCESS_TOKEN = "x-access-token"
+        const val USER_IDX = "user_idx"
         lateinit var sRetrofit: Retrofit
         lateinit var globalSharedPreferences: SharedPreferences
     }
@@ -19,7 +20,7 @@ class GlobalApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        //initRetrofitInstance()
+        initRetrofitInstance()
         globalSharedPreferences = applicationContext.getSharedPreferences("sagak", MODE_PRIVATE)
     }
 

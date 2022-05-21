@@ -5,18 +5,18 @@
     tools:ignore="AlwaysShowAction,HardcodedText" >
     <item
         android:id="@+id/homeFragment"
-        android:icon="@color/black"
+        android:icon="@drawable/ic_ticket"
         app:showAsAction="always"
         android:enabled="true"
         android:title="나의 기록"/>
     <item
         android:id="@+id/addFragment"
-        android:icon="@color/black"
+        android:icon="@drawable/ic_add_ticket"
         app:showAsAction="always"
         android:title="추가하기" />
     <item
         android:id="@+id/profileFragment"
-        android:icon="@color/black"
+        android:icon="@drawable/ic_profile_black"
         app:showAsAction="always"
         android:title="프로필" />
 
