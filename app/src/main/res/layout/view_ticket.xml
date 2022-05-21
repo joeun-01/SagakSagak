@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ticket"
-            type="com.songilcraft.sagak_sagak.data.TestTicket" />
+            type="com.songilcraft.sagak_sagak.data.Ticket" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

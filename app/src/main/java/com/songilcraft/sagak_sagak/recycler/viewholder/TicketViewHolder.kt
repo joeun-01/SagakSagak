@@ -7,7 +7,7 @@ import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
 import com.songilcraft.sagak_sagak.R
-import com.songilcraft.sagak_sagak.data.TestTicket
+import com.songilcraft.sagak_sagak.data.Ticket
 import com.songilcraft.sagak_sagak.databinding.ViewTicketBinding
 
 class TicketViewHolder(private val binding : ViewTicketBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -37,7 +37,7 @@ class TicketViewHolder(private val binding : ViewTicketBinding) : RecyclerView.V
     }
 
 
-    fun bind(ticket : TestTicket) {
+    fun bind(ticket : Ticket) {
         binding.ticket = ticket
     }
 }
