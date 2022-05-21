@@ -26,6 +26,10 @@
         </activity>
         <activity android:name=".screen.gallery.GalleryActivity"/>
         <activity android:name=".screen.storywrite.StoryWriteActivity"/>
+        <activity android:name=".screen.login.LoginActivity"/>
+        <activity android:name=".screen.signup.SignUpActivity"/>
+        <activity android:name=".screen.signup.SignUpNameActivity"/>
+        <activity android:name=".screen.signup.SignUpPasswordActivity"/>
     </application>
 
 </manifest>
